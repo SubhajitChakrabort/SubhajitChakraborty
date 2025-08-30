@@ -10,8 +10,8 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     
-    const serviceID = "service_pu0huzp";
-    const templateID = "template_bs3vtq6";
+    const serviceID = "service_su1x1ub";
+    const templateID = "template_lyjgkeq";
     const publicKey = "SVwM-CPv6nvolRb78";
 
     emailjs
@@ -58,10 +58,10 @@ const Contact = () => {
           <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-2xl p-8 backdrop-blur-sm border border-cyan-500/20">
             <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div>
-                <label htmlFor="user_name" className="block text-white mb-2">Name</label>
+                <label htmlFor="name" className="block text-white mb-2">Name</label>
                 <input
                   type="text"
-                  name="user_name"
+                  name="name"
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-cyan-500/20 text-white focus:outline-none focus:border-cyan-500 transition-colors"
                   placeholder="Enter your name"
                   required
@@ -69,10 +69,10 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="user_email" className="block text-white mb-2">Email</label>
+                <label htmlFor="email" className="block text-white mb-2">Email</label>
                 <input
                   type="email"
-                  name="user_email"
+                  name="email"
                   className="w-full px-4 py-3 rounded-lg bg-white/10 border border-cyan-500/20 text-white focus:outline-none focus:border-cyan-500 transition-colors"
                   placeholder="Enter your email"
                   required
